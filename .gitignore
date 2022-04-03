@@ -1,0 +1,9 @@
+# vendor files
+vendor/
+
+github.com
+
+# local env files
+.env
+go.sum
+github.com
