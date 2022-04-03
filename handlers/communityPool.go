@@ -1,10 +1,10 @@
 package handlers
 
 import (
+	utils "functionX-Query-APIs/utils"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"os/exec"
-	"strings"
 )
 
 func CommunityPollOutstanding(c *gin.Context) {
@@ -18,7 +18,9 @@ func CommunityPollOutstanding(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, string(stdout))
+	res := utils.YamlParser(string(stdout))
+
+	c.JSON(http.StatusOK, res)
 
 }
 
@@ -33,6 +35,8 @@ func CommunityPollDeductions(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, string(stdout))
+	res := utils.YamlParser(string(stdout))
+
+	c.JSON(http.StatusOK, res)
 
 }
