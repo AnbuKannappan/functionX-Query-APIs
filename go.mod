@@ -3,6 +3,7 @@ module functionX-Query-APIs
 go 1.18
 
 require (
+	github.com/Netflix/go-env v0.0.0-20210215222557-e437a7e7f9fb // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/gin-gonic/gin v1.7.7 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
