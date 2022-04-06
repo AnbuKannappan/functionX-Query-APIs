@@ -21,7 +21,7 @@ Golang REST API to support query functionality of FunctionX core mainnet Blockch
   API: http://YOURIP:PORT/query/community-pool/outstanding
 	CLI Command: fxcored query distribution community-pool
 
-2. Query all the deductions from the community-spend pool
+2. Query all the withdrawals passed proposals from the community-spend pool
   
   API: http://YOURIP:PORT/query/community-pool/deductions
 	CLI Command: fxcored q gov proposals
